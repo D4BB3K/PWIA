@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function okno_zamknij_dabrowski()
+			{
+				window.close()
+			}
+		</script>
+	</head>
+<body>
+	<p><b>-kiedy powstała &rArr;</b> Ten wszechobecny dziś język skryptowy został stworzony – początkowo jako LiveScript – na potrzeby firmy Netscape i przeglądarki Navigator.</p>
+	<p><b>-dlaczego jest to język skryptowy &rArr;</b> Nie musi zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania.</p>
+	<p><b>-gdzie jest wykonywany JS (kliet lub serwer) &rArr;</b> Jest wykonywany u klienta</p>
+	<p><b>-dlaczego jest to bezpieczne narzędzie &rArr;</b> JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów komputera, przy użyciu którego przeglądana jest dana strona, a
+	wszelkie odwołania do funkcji i obiektów wykonywane są w trakcie wykonywania programu.</p>
+	<p><b>-czy jest to język obiektowy , jeśli tak to dlaczego &rArr;</b> Tak jest to język obiektowy, ponieważ posiada stringi dzięki któym tworzy obiekt</p>
+	<br>
+	<p><b>&lt;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></b><br>Polecenie tworzy przycisk o nazwie przycisk i wartości Nowa Strona i otwiera nowe okno</p>
+	<br>
+	<p><b>window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</b><br>Otwiera nowe okno o nazwie okienko z odnośnikiem do pliku obraz.html, ukrywa standardowy pasek narzędzi,
+		 przyciski katalogów, menu przeglądarki, ustawia wysokość na 280px, szerokość na 160px, położenie okna względem góry 160px i położenie względem lewej strony ekranu na 200px
+	</p>
+	<br>
+	<p><b>toolbar=no &rArr;</b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa standardowy pasek narzędzi</p>
+	<p><b>directories=no, &rArr;</b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa przyciski katalogów</p>
+	<p><b>menubar=no, &rArr;</b> wartość yes lub no (1 lub 0): pokazuje lub ukrywa menu przeglądarki</p>
+	<p><b>height=280, &rArr;</b> wartość w pixelach (1 lub 0): ustawia wysokość okna</p>
+	<p><b>width=160, &rArr;</b> wartość w pixelach (1 lub 0): ustawia szerokość okna</p>
+	<p><b>top=200, &rArr;</b> wartość w pixelach : ustawia położenie okna względem góry ekranu</p>
+	<p><b>left=200 &rArr;</b> wartość w pixelach : ustawia położenie okna względem lewej strony ekranu</p>
+	<br>
+	<p><b>window.close()</b><br>Polecenie zamyka okno</p>
+	<br>
+	<img src="obraz1.gif" />
+	<input type="button" value="zamknij okno" onclick="okno_zamknij_dabrowski()"/>
+</body>
+</html>
