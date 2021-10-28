@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Zadanie15</title> 
+        <script language="JavaScript">
+            var X1_dab=prompt("x1=","");
+            var X2_dab=prompt("x2=","");
+            var x1=parseFloat(X1_dab);
+            var x2=parseFloat(X2_dab);
+            var a1;
+            var a2;
+            var a3;
+            var a4;
+            var a5;
+            var wynik1;
+            var wynik2;
+            var wynik3;
+            a1=3*Math.pow(x1,(6/(6+2)));
+            a2=(2*Math.cos(x1*Math.PI/180))+(2*Math.sin(x1*Math.PI/180));
+            a3=Math.cbrt(Math.pow(x1,5)+(2*Math.pow(x2,4)));
+            a4=Math.abs(x1-x2);
+            a5=a3*a4;
+            wynik1=a1.toFixed(2);
+            wynik2=a2.toFixed(2);
+            wynik3=a5.toFixed(2);
+            document.write("x1::"+x1+"<br>");
+            document.write("x2::"+x2+"<br>");
+            document.write("y1::"+wynik1+"<br>"); 
+            document.write("y2::"+wynik2+"<br>");
+            document.write("y3::"+wynik3+"<br>");      
+        </script>    
+    </head>
+<body>       
+</body>
+</html>
