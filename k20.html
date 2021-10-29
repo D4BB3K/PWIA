@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Kod20</title>
+		<link rel="stylesheet" type="text/css" href="style.css/kody.css">
+	</head>
+<body>
+	<textarea rows="62" disabled>
+<!DOCTYPE html>
+<html lang="pl">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Zadanie20</title>
+        <meta name="author" content="Jakub Dąbrowski">
+        <meta name="description" content="Zadanie 20">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script language="JavaScript">
+            function Ob_dabrowski(a,b,h)
+            {
+                a_dab=parseFloat(a)
+                b_dab=parseFloat(b)
+                h_dab=parseFloat(h)
+                Ob_wynik=Math.sqrt(((((Math.abs(a_dab)-Math.abs(b_dab))/2)*((Math.abs(a_dab)-Math.abs(b_dab))/2))+(h_dab*h_dab)))*2+a_dab+b_dab;
+                document.getElementsByName('obwod')[0].value=Ob_wynik.toFixed(2); /* na dokument */
+                alert("Obwod= "+Ob_wynik.toFixed(2)+" cm"); /*do okna Alert */
+                wyprowadz_obwod_dab.innerHTML="Obwod= "+Ob_wynik+" cm"+"<br>"; /* do tabeli */
+            }
+            function P_dabrowski(a,b,h)
+            {
+                a_dab=parseFloat(a)
+                b_dab=parseFloat(b)
+                h_dab=parseFloat(h)
+                P_wynik=(a_dab+b_dab)*h_dab*0.5;
+                document.getElementsByName('pole')[0].value=P_wynik.toFixed(2); /* na dokument */
+                alert("Pole= "+P_wynik.toFixed(2)+" cm^2"); /*do okna Alert */
+                wyprowadz_pole_dab.innerHTML="Pole= "+P_wynik+" cm^2"; /* do tabeli */
+            }
+        </script>
+    </head>
+    <body>
+        Obliczenie Ob i P trapezu równoramiennego
+        <br> <br>
+        <form name="formularz" action="..." onsubmit="Ob_dabrowski(this.a.value,this.b.value,this.h.value); P_dabrowski(this.a.value,this.b.value,this.h.value);return false"> 
+            Podaj górną podstawę=
+            <input size="6" name="a">
+            Podaj dolną podstawę=
+            <input size="6" name="b">
+            Podaj wysokość=
+            <input size="6" name="h">
+            <br>
+            <br>
+            <input TYPE="submit" Value="oblicz" >
+            <br>
+            <br>
+            Ob=
+            <input size="6" name="obwod">
+            P=
+            <input size="6" name="pole">
+        </form>
+        <table>
+            <tr id="wyprowadz_obwod_dab"></tr>
+            <tr id="wyprowadz_pole_dab"></tr>
+        </table>
+    </body>
+</html>
+	</textarea>
+</body>
+</html>
