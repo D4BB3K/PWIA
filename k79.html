@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Kod79</title>
+		<link rel="stylesheet" type="text/css" href="kody.css">
+	</head>
+<body>
+	<textarea rows="41" disabled>
+<html>
+<body>
+    <script language="JavaScript">
+        var liczba1=prompt("R="," ");
+        var R=parseFloat(liczba1);
+        var licznik_dab=0;
+        for(var i=-Math.round(R)-1; i<=Math.round(R)+1; i++){
+        for(var j=-Math.round(R)-1; j<=Math.round(R)+1; j++){
+        var d=Math.sqrt(i*i+j*j);
+        if(d<=R){
+        licznik_dab++;
+        }
+        document.write("("+i+","+j+")"+"  ");
+        }
+        document.write("<br>");
+        }
+        document.write("N="+licznik_dab+"  ");
+    </script>
+</body>
+</html>
+	</textarea>
+</body>
+</html>
