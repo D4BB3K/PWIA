@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Zadanie3</title>
+        <link href="style.css/z3.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<p>
+		<h3>Rodzaje okienek:</h3>
+		<ul>
+			<li>Okienko <b>alert</b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK,</li>
+			<li>Okienko <b>prompt</b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu,</li>
+			<li>Okienko <b>confirm</b> służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</li>
+		</ul>
+	</p>
+	<p>
+		<h3>Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</h3>
+		<ol>
+			<li>Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".</li>
+            <u>Poprawne nazwy zmiennych:</u> zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz
+            <br>
+			<u>Błędne nazwy zmiennych:</u> 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.
+			<li>Wielkość liter ma znaczenie.</li>
+            <u>Rekord i rekord to dwie różne zmienne!</u> Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.
+			<li>Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</li>
+		</ol>
+	</p
+    <p>
+        <h3>Typy zmiennych w Javascript</h3>
+        <br>
+        W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++, typy zmiennych są definiowane w trakcie ich przypisywania.
+        <br>
+        Podstawowe zmienne liczbowe w JavaScript to:
+        <ul style="list-style: none;">
+            <li>Number <b>&xrarr;</b> Typ liczbowy</li>
+            <ul>
+                <li>zmienna całkowite</li>
+                <li>zmiennoprzecinkowe</li>
+            </ul>
+            <li>String <b>&xrarr;</b> Typ tekstowy</li>
+            <li>Boolea <b>&xrarr;</b> Typ logiczny</li>
+            <li>Null <b>&xrarr;</b> Pusta zawartość</li>
+            <li>Undefined <b>&xrarr;</b> Typ niezidentyfikowany</li>
+            <li>Object <b>&xrarr;</b> Obiekt</li>
+        </ul>
+    </p>
+    <h3>Konwersji zmiennych</h3>
+    <p>
+        Wczytanie zmiennej z użyciem <b>prompt</b> wykonywane jest jako ciąg znaków dlatego konieczna jest konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.
+        <ul style="list-style: none;">
+            <li><u>parseFloat(zmienna)</u> - konwersja zmiennej do typu float</li>
+            <li><u>parseInt(zmienna)</u> - konwersja zmiennej do typu int (liczbowego)</li>
+            <li><u>toString(zmienna)</u> - konwersja zmiennej do typu łańcuchowego</li>
+        </ul>
+    </p>
+</body>
+</html>
