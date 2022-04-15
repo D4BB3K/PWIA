@@ -13,7 +13,44 @@
 
 <body>
 	<textarea rows="123" disabled>
-
+<!DOCTYPE html>
+<html lang="pl">
+        
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zadanie 28</title>
+    <meta name="author" content="Jakub Dąbrowski">
+    <meta name="description" content="Zadanie 28">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function Mebel(rodzaj_k, material_k, kolor_k, dlugosc_k) //początek konstruktora
+        {
+            this.rodzaj = rodzaj_k;
+            this.material = material_k;
+            this.kolor = kolor_k;
+            this.dlugosc = dlugosc_k;
+        } //koniec konstruktora
+        Mebel.prototype.Mebel_wypisz_dabrowski = function () //definicja metody
+        {
+            alert(this.rodzaj + ', ' + this.material + ', ' + this.kolor + ', ' + this.dlugosc);
+        };
+        var mebel1 = new Mebel("Biurko", "Dąb", "Czarny", "2m"); // nowy obiekt mebel1
+        var mebel2 = new Mebel('Stół', 'Sosna', 'Brązowy', "3m"); // nowy obiekt mebel2
+        mebel1.Mebel_wypisz_dabrowski(); // uruchomienie metody wypisz() dotyczącej mebel1
+        mebel2.Mebel_wypisz_dabrowski(); // uruchomienie metody wypisz() dotyczącej mebel2
+        document.write("Dostęp do właściwości" + "<br>");
+        // poniżej dostęp do pól mebel1, mebel2
+        document.write("Mebel pierwszy: " + " " + mebel1.rodzaj + ", " + mebel1.material + ", " + mebel1.kolor + ", " + mebel1.dlugosc + "<br>");
+        document.write("Mebel drugi: " + " " + mebel2.rodzaj + ", " + mebel2.material + ", " + mebel2.kolor + ", " + mebel2.dlugosc);
+    </script>
+</head>
+    
+<body>
+    
+</body>
+    
+</html>
 	</textarea>
 </body>
 
