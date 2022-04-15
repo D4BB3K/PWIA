@@ -9,7 +9,17 @@
     <meta name="description" content="Zadanie 26">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript">
-        
+        var Mebel =
+        {
+            rodzaj: 'Krzesło',
+            material: 'Dąb',
+            kolor: 'czarny',
+            Mebel_wyswietl_dabrowski: function () 
+            {
+                document.write(this.rodzaj +', '+ this.material +', '+ this.kolor)
+            }
+        }
+        Mebel.Mebel_wyswietl_dabrowski();
     </script>
 </head>
     
