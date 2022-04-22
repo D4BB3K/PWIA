@@ -9,7 +9,7 @@ body
     color: #369304;
     font-family: 'Courier New', Courier, monospace;
     background-image: url("https://images.hdqwalls.com/wallpapers/matrix-code-minimal-qz.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 h1
 {
