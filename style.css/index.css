@@ -1,6 +1,6 @@
 /*Jakub Dąbrowski*/
 
-body
+body, html
 {
     width: 100%;
     height: 100%;
@@ -10,6 +10,7 @@ body
     font-family: 'Courier New', Courier, monospace;
     background-image: url("https://images.hdqwalls.com/wallpapers/matrix-code-minimal-qz.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 h1
 {
